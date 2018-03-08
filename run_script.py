@@ -9,4 +9,5 @@ from bs4 import BeautifulSoup
 page = scrape.get_url(urls['titanic_data']).text
 soup = BeautifulSoup(page, 'html.parser')
 
-dp.populate(soup)
+titanic = dp.populate(soup)
+dp.analyse(titanic.passengers)

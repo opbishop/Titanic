@@ -9,3 +9,6 @@ class Passenger():
 
     def to_string(self):
         print(self.first_name + self.last_name)
+
+    def get_values(self):
+        return[self.last_name, self.first_name, self.age, self.boarded, self.survived, self.gender]
